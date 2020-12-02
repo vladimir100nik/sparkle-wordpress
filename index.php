@@ -1,47 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sparkle Heart</title>
-    <link rel="shortcut icon" href="<? echo bloginfo('template_url');?>/assets/img/favicon.ico" type="image/x-icon">
-
-    <?
-    wp_head();
-    ?>
-
-</head>
-
-<body>
-    <header>
-        <nav>
-            <img src="<? echo bloginfo('template_url');?>/assets/img/logo.jpg" alt="Sparkle Heart Logo">
-
-            <div class='menu-btn'>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <ul id='menu'>
-                <li><a href="assets/pages/ideja.html">Ideja</a></li>
-                <li><a href="assets/pages/dreams.html">Piesaki Sapni</a></li>
-                <li><a href="assets/pages/commercial.html">Uzņēmējiem</a></li>
-                <li><a href="assets/pages/dreambank.html">Sapņu banka</a></li>
-                <li><a href="assets/pages/support.html">Sapņus atbalsta</a></li>
-                <li><a href="assets/pages/99stories.html">99 Iedvesmas stāsti</a></li>
-                <li><a href="#">LV</a></li>
-            </ul>
-
-            <div class="menu-overlay"></div>
-        </nav>
-
-        <div class="section video-container">
-            <img class='video-thumb' src="<? echo bloginfo('template_url');?>/assets/img/video-thumb.svg" alt="Video thumbnail">
-            <img class='play-btn' src="<? echo bloginfo('template_url');?>/assets/img/play-button.svg" alt="Play video">
-        </div>
-    </header>
+<?
+get_header();
+?>
 
 
     <h1 class="section about">SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos
@@ -134,78 +93,6 @@
     </div>
 
 
-    <footer>
-        <div class="footer_idea">
-            <div class="footer-top">
-                <div class="footer-col">
-                    <a href="/">
-                        <img class="logo_footer" src="<? echo bloginfo('template_url');?>/assets/img/logo-footer.png" alt="Sparkle Footer Logo">
-                    </a>
-                    <h2 class="full_scr_hidden">Juris Gogulis</h2>
-                </div>
-
-                <div class="footer-col footer_links">
-                    <ul>
-                        <li><a href="#">Ideja</a></li>
-                        <li><a href="#">Piesaki Sapni</a></li>
-                        <li><a href="#">Uzņēmējiem</a></li>
-                        <li><a href="#">Sapņu banka</a></li>
-                        <li><a href="#">Sapņus atbalsta</a></li>
-                        <li><a href="#">Iedvesmas stāsti</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col rekv_hidden">
-
-                    <div class="rekv_hidden">
-                        <h2>Biedrība SparkleHeart</h2>
-
-                        <div>Reģistrācijas nr. 40008293119</div>
-                        <div>Banka: SWEDBANK A/S</div>
-                        <div>LV52HABA0551047652465</div>
-                    </div>
-
-                </div>
-
-                <div class="footer-col">
-                    <div class="contacts">
-                        <h2>Juris Gogulis</h2><br>
-                        <div>juris.gogulis@sparkleheart.org</div>
-                        <div>+37126890034</div>
-                        <div>Biķernieku iela 24a - 5, LV-1006</div>
-                        <a class="full_scr_hidden" id="show_rekv">Skatīt rekvizītus</a>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://facebook.com">
-                            <img src="<? echo bloginfo('template_url');?>/assets/img/facebook-icon.svg" alt="facebook">
-                        </a>
-
-                        <a href="https://instagram.com">
-                            <img src="<? echo bloginfo('template_url');?>/assets/img/instagram-icon.svg" alt="instagram">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="copyrights">
-                    <div>© SparkleHeart 2020.</div>
-                    <div>Visas tiesības aizsargātas.</div>
-                </div>
-
-                <div>Privātuma politika</div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="scroll-to-top"></div>
-
-    
-
-    <?
-    wp_footer();
-    ?>
-</body>
-
-</html>
+  <?
+  get_footer();
+  ?>

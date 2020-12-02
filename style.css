@@ -1,3 +1,7 @@
+/*
+Theme Name: Piere
+*/
+
 @font-face {
     font-family: "Montserrat-Medium";
     src: url(assets/fonts/Montserrat-Medium.ttf);
@@ -1119,7 +1123,7 @@
     }
   
     .full_scr_hidden {
-      visibility: revert;
+      visibility: visible;
       font-weight: bold;
       font-size: larger;
     }
@@ -1302,7 +1306,7 @@
     }
   
     .full_scr_hidden {
-      visibility: revert;
+      visibility: visible;
     }
   }
   

@@ -1,39 +1,42 @@
-$(document).ready(function () {
 
-    $(".menu-btn").click(function () {
-        $(".menu-overlay").fadeIn(300);
-        $("#menu").delay(320).css("right", "0");
+    jQuery(document).ready(function () {
+
+        jQuery(".menu-btn").click(function () {
+            jQuery(".menu-overlay").fadeIn(300);
+            jQuery("#menu").delay(320).css("right", "0");
+        });
+
+        jQuery(".menu-overlay").click(function () {
+            jQuery("#menu").css("right", "-101%");
+            jQuery(".menu-overlay").fadeOut(300);
+        });
+
+        jQuery(document).scroll(function () {
+            if (jQuery(this).scrollTop() > 500) {
+                jQuery(".scroll-to-top").fadeIn(500);
+            } else {
+                jQuery(".scroll-to-top").fadeOut(500);
+            }
+        });
+
+        jQuery(".scroll-to-top").click(function () {
+            jQuery("html, body").animate({scrollTop: 0}, 400);
+        });
     });
 
-    $(".menu-overlay").click(function () {
-        $("#menu").css("right", "-101%");
-        $(".menu-overlay").fadeOut(300);
-    });
-
-    $(document).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-            $(".scroll-to-top").fadeIn(500);
-        } else {
-            $(".scroll-to-top").fadeOut(500);
-        }
-    });
-
-    $(".scroll-to-top").click(function () {
-        $("html, body").animate({scrollTop: 0}, 400);
-    });
-});
 
 
 function block() {
 
 
-    let wrap = $("<div class='block'>")
+    let wrap = jQuery("<div class='block'>")
     for (let i = 19; i < 100; i++) {
         let c = wrap.clone()
-        $("<span>").text(i).appendTo(c)
-        c.appendTo($("#gallery"));
+        jQuery("<span>").text(i).appendTo(c)
+        c.appendTo(jQuery("#gallery"));
     }
 }
+
 block();
 
 // let map;
@@ -45,59 +48,64 @@ block();
 //     });
 // }
 
-$(document).ready(function () {
 
-    var change_img_time = 4000,
-        transition_speed = 400;
 
-    var listItems = $("#slider").children('li'),
-        dotItems = $('#dots').children('li'),
-        listLen = listItems.length,
-        current,
-        changeTimeout;
+    jQuery(document).ready(function () {
 
-    function moveTo(newIndex) {
+        var change_img_time = 4000,
+            transition_speed = 400;
 
-        var i = newIndex;
+        var listItems = jQuery("#slider").children('li'),
+            dotItems = jQuery('#dots').children('li'),
+            listLen = listItems.length,
+            current,
+            changeTimeout;
 
-        if (newIndex == 'prev') {
-            i = (current > 0) ? (current - 1) : (listLen - 1);
+        function moveTo(newIndex) {
+
+            var i = newIndex;
+
+            if (newIndex == 'prev') {
+                i = (current > 0) ? (current - 1) : (listLen - 1);
+            }
+
+            if (newIndex == 'next') {
+                i = (current < listLen - 1) ? (current + 1) : 0;
+            }
+
+            dotItems.removeClass('active')
+                .eq(i).addClass('active');
+
+            listItems.fadeOut(transition_speed)
+                .eq(i).fadeIn(transition_speed);
+
+            current = i;
+
+            //resets time interval if user clicks on slider dot; then begin automated slider
+            clearTimeout(changeTimeout);
+            changeTimeout = setTimeout(function () {
+                moveTo('next');
+            }, change_img_time);
         }
-
-        if (newIndex == 'next') {
-            i = (current < listLen - 1) ? (current + 1) : 0;
-        }
-
-        dotItems.removeClass('active')
-            .eq(i).addClass('active');
-
-        listItems.fadeOut(transition_speed)
-            .eq(i).fadeIn(transition_speed);
-
-        current = i;
-
-        //resets time interval if user clicks on slider dot; then begin automated slider
-        clearTimeout(changeTimeout);
-        changeTimeout = setTimeout(function() { moveTo('next'); }, change_img_time);
-    };
-
-    // Event handlers
-    $("#dots li").click(function () {
-        var i = $('#dots li').index(this);
-        moveTo(i);
     });
 
-    $("#prev").click(function () {
-        moveTo('prev');
-    });
+        // Event handlers
+    jQuery("#dots li").click(function () {
+            var i = jQuery('#dots li').index(this);
+            moveTo(i);
+        });
 
-    $("#next").click(function () {
+    jQuery("#prev").click(function () {
+            moveTo('prev');
+        });
+
+    jQuery("#next").click(function () {
+            moveTo('next');
+        });
+        //initialize slider on load
         moveTo('next');
-    });
 
-    //initialize slider on load
-    moveTo('next');
-});
+
 
 // $('.show_rekv').click(function (){
 //     $('#menu_footer').css('display', 'none');
@@ -105,12 +113,12 @@ $(document).ready(function () {
 // $('.show_rekv').click(function (){
 //     $('#menu_footer').css('display', ' ');
 // })
-$('#show_rekv').on('click',function(e){
+jQuery('#show_rekv').on('click', function (e) {
     e.preventDefault();
-    $('.rekv_hidden').toggleClass('active_show');
+    jQuery('.rekv_hidden').toggleClass('active_show');
 });
 
-$('#show_all').click(function(e){
-    $('.block').css('display', 'block');
-    $('#show_all').css('display', 'none');
+jQuery('#show_all').click(function (e) {
+    jQuery('.block').css('display', 'block');
+    jQuery('#show_all').css('display', 'none');
 });

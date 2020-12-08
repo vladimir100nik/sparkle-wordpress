@@ -17,29 +17,33 @@
 <body>
     <header>
         <nav>
+
+
             <? the_custom_logo(); ?>
 
-            <div class='menu-btn'>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
 
-            <ul id='menu'>
-                <li><a href="assets/pages/ideja.html">Ideja</a></li>
-                <li><a href="assets/pages/dreams.html">Piesaki Sapni</a></li>
-                <li><a href="assets/pages/commercial.html">Uzņēmējiem</a></li>
-                <li><a href="assets/pages/dreambank.html">Sapņu banka</a></li>
-                <li><a href="assets/pages/support.html">Sapņus atbalsta</a></li>
-                <li><a href="assets/pages/99stories.html">99 Iedvesmas stāsti</a></li>
-                <li><a href="#">LV</a></li>
-            </ul>
+           <?
+                wp_nav_menu( [
+
+                	'menu'            => 'Main',
+                	'container'       => false,
+                	'menu_class'      => 'menu',
+                	'menu_id'         => 'menu',
+                	'echo'            => true,
+                	'fallback_cb'     => 'wp_page_menu',
+                	'items_wrap'      => '<ul class="menu">%3$s</ul>',
+                	'depth'           => 1,
+
+                ] );
+           ?>
+                        <div class='menu-btn'>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                        </div>
+
 
             <div class="menu-overlay"></div>
         </nav>
+ </header>
 
-        <div class="section video-container">
-            <img class='video-thumb' src="<? the_field('present_video_image'); ?>" alt="Video thumbnail">
-            <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=0Z5_mgxoXeM"><img class='play-btn' src="<? echo bloginfo('template_url');?>/assets/img/play-button.svg" alt="Play video"></a>
-        </div>
-    </header>

@@ -3,11 +3,11 @@ jQuery(document).ready(function () {
 
         jQuery(".menu-btn").click(function () {
             jQuery(".menu-overlay").fadeIn(300);
-            jQuery("#menu").delay(320).css("right", "0");
+            jQuery(".menu").delay(320).css("right", "0");
         });
 
         jQuery(".menu-overlay").click(function () {
-            jQuery("#menu").css("right", "-101%");
+            jQuery(".menu").css("right", "-101%");
             jQuery(".menu-overlay").fadeOut(300);
         });
 
@@ -27,8 +27,6 @@ jQuery(document).ready(function () {
 
 
 function block() {
-
-
     let wrap = jQuery("<div class='block'>")
     for (let i = 19; i < 100; i++) {
         let c = wrap.clone()
@@ -38,16 +36,6 @@ function block() {
 }
 
 block();
-
-// let map;
-//
-// function initMap() {
-//     map = new google.maps.Map(document.getElementById('map'), {
-//         center: {lat: 56.934556, lng: 24.077226},
-//         zoom: 12
-//     });
-// }
-
 
 
     jQuery(document).ready(function () {

@@ -3,6 +3,11 @@ get_header();
 ?>
 
 
+
+        <div class="section video-container">
+            <img class='video-thumb' src="<? the_field('present_video_image'); ?>" alt="Video thumbnail">
+            <a  class='play-btn' data-fancybox="gallery" href="https://www.youtube.com/watch?v=0Z5_mgxoXeM"><img src="<? echo bloginfo('template_url');?>/assets/img/play-button.svg" alt="Play video"></a>
+        </div>
     <h1 class="section about">
     <?
     the_field('about');

@@ -6,56 +6,59 @@ Theme Name: Piere
     font-family: "Montserrat-Medium";
     src: url(assets/fonts/Montserrat-Medium.ttf);
     font-display: swap;
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: "Montserrat-Regular";
     src: url(assets/fonts/Montserrat-Regular.ttf);
     font-display: swap;
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: "Oswald";
     src: url(assets/fonts/Oswald.ttf);
     font-display: swap;
-  }
-  * {
+}
+
+* {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     padding: 0;
     margin: 0;
     line-height: 21.94px;
     font-family: "Montserrat-Regular", serif;
     background-color: #fff;
-  }
-  
-  img {
+}
+
+img {
     user-select: none;
-  }
-  
-  .section {
+}
+
+.section {
     max-width: 1366px;
     margin: 0 auto;
     margin-top: 150px;
-  }
-  
-  .d-flex {
+}
+
+.d-flex {
     display: flex;
-  }
-  
-  .justify-content-center {
+}
+
+.justify-content-center {
     justify-content: center;
-  }
-  
-  .justify-content-between {
+}
+
+.justify-content-between {
     justify-content: space-between;
-  }
-  
-  .align-items-center {
+}
+
+.align-items-center {
     align-items: center;
-  }
-  
-  .checbox-container {
+}
+
+.checbox-container {
     position: relative;
     padding-left: 40px;
     margin-bottom: 12px;
@@ -64,29 +67,35 @@ Theme Name: Piere
     user-select: none;
     /* Hide the browser's default checkbox */
     /* Create a custom checkbox */
-  }
-  .checbox-container:hover {
+}
+
+.checbox-container:hover {
     /* On mouse-over, add a grey background color */
-  }
-  .checbox-container:hover input ~ .checkmark {
+}
+
+.checbox-container:hover input ~ .checkmark {
     background-color: #E7E7E7;
-  }
-  .checbox-container input {
+}
+
+.checbox-container input {
     height: 0;
     width: 0;
     position: absolute;
     cursor: pointer;
     opacity: 0;
     /* When the checkbox is checked, add a blue background */
-  }
-  .checbox-container input:checked ~ .checkmark {
+}
+
+.checbox-container input:checked ~ .checkmark {
     background-color: #FFA800;
     /* Show the checkmark when checked */
-  }
-  .checbox-container input:checked ~ .checkmark::after {
+}
+
+.checbox-container input:checked ~ .checkmark::after {
     display: block;
-  }
-  .checbox-container .checkmark {
+}
+
+.checbox-container .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,13 +103,14 @@ Theme Name: Piere
     width: 16px;
     border-radius: 3px;
     background-color: #eee;
-        /* Create the checkmark/indicator (hidden when not checked) */  :;
+    /* Create the checkmark/indicator (hidden when not checked) */:;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
-  .checbox-container .checkmark::after {
+
+.checbox-container .checkmark::after {
     width: 3px;
     height: 8px;
     display: none;
@@ -111,20 +121,22 @@ Theme Name: Piere
     border: solid #fff;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
-  }
-  
-  header {
+}
+
+header {
     max-width: 1366px;
     margin: 0 auto;
-  }
-  header nav {
+}
+
+header nav {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 65px;
-  }
-  header nav::after {
+}
+
+header nav::after {
     width: 100%;
     height: 128px;
     content: "";
@@ -134,29 +146,34 @@ Theme Name: Piere
     top: 0;
     left: 0;
     z-index: -1;
-  }
-  header nav .menu-btn {
+}
+
+header nav .menu-btn {
     height: 40px;
     width: 45px;
     display: none;
-  }
-  header nav .menu-btn span {
+}
+
+header nav .menu-btn span {
     width: 100%;
     height: 6px;
     margin-top: 8px;
     display: block;
     border-radius: 5px;
     background-color: #FFA800;
-  }
-  header nav ul {
+}
+
+header nav ul {
     display: flex;
     margin: 0;
-  }
-  header nav ul li {
+}
+
+header nav ul li {
     margin-left: 40px;
     list-style: none;
-  }
-  header nav ul li a {
+}
+
+header nav ul li a {
     font-family: "Montserrat-Medium", serif;
     color: #2F4858;
     font-size: 18px;
@@ -164,11 +181,13 @@ Theme Name: Piere
     text-decoration: none;
     border-bottom: 3px solid transparent;
     transition: all 0.3s;
-  }
-  header nav ul li a:hover, header nav ul li a.active {
+}
+
+header nav ul li a:hover, header nav ul li a.active {
     border-bottom: 3px solid #FFA800;
-  }
-  header nav .menu-overlay {
+}
+
+header nav .menu-overlay {
     height: 100%;
     width: 100%;
     display: none;
@@ -177,8 +196,9 @@ Theme Name: Piere
     left: 0;
     z-index: 100;
     background-color: rgba(47, 72, 88, 0.7);
-  }
-  header .video-container {
+}
+
+header .video-container {
     width: 100%;
     height: 722px;
     overflow: hidden;
@@ -186,24 +206,27 @@ Theme Name: Piere
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  header .video-container img.video-thumb {
+}
+
+header .video-container img.video-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     z-index: -2;
-  }
-  header .video-container img.play-btn {
+}
+
+header .video-container img.play-btn {
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.4s;
-  }
-  header .video-container img.play-btn:hover {
+}
+
+header .video-container img.play-btn:hover {
     transform: scale(1.2);
-  }
-  
-  .page_title {
+}
+
+.page_title {
     display: block;
     height: 70px;
     font-family: Oswald;
@@ -215,82 +238,87 @@ Theme Name: Piere
     text-align: center;
     color: #2F4858;
     margin: 85px auto 60px;
-  }
-  
-  .about {
+}
+
+.about {
     max-width: 654px;
     font-weight: inherit;
     font-size: 18px;
     text-align: center;
     margin: 100px auto;
-  }
-  
-  .gallery-container {
+}
+
+.gallery-container {
     position: relative;
-  }
-  .gallery-container::before {
+}
+
+.gallery-container::before {
     width: 100%;
-    height: 128px;
     content: "";
     background: url("assets/img/images-top.png") center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-    height: 55px;
     z-index: 1;
-  }
-  .gallery-container::after {
+    height: 55px;
+
+}
+
+.gallery-container::after {
     width: 100%;
-    height: 128px;
     content: "";
     background: url("assets/img/images-bottom.png") center no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0;
     left: 0;
-    z-index: -1;
     height: 55px;
     top: auto;
     bottom: 0;
     z-index: 1;
-  }
-  .gallery-container .gallery {
+}
+
+.gallery-container .gallery {
     display: flex;
-  }
-  .gallery-container .gallery div {
+}
+
+.gallery-container .gallery div {
     overflow: hidden;
-  }
-  .gallery-container .gallery div img {
+}
+
+.gallery-container .gallery div img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
     transition: all 0.4s;
-  }
-  .gallery-container .gallery div img:hover {
+}
+
+.gallery-container .gallery div img:hover {
     transform: scale(1.2);
-  }
-  .gallery-container .gallery div:nth-of-type(3) div {
+}
+
+.gallery-container .gallery div:nth-of-type(3) div {
     width: 100%;
     height: 50%;
     display: block;
-  }
-  
-  .dream {
+}
+
+.dream {
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-  }
-  .dream h2 {
+}
+
+.dream h2 {
     font-size: 24px;
     color: #2F4858;
     font-family: "Oswald", serif;
     margin-bottom: 50px;
-  }
-  .dream .btn {
+}
+
+.dream .btn {
     width: 233px;
     height: 50px;
     font-size: 18px;
@@ -301,32 +329,38 @@ Theme Name: Piere
     cursor: pointer;
     background-color: #FFA800;
     transition: all 0.3s;
-  }
-  .dream .btn:hover {
+}
+
+.dream .btn:hover {
     box-shadow: 0 0 10px #FFA800;
-  }
-  
-  .contact-us {
+}
+
+.contact-us {
     margin-bottom: 100px;
-  }
-  .contact-us h2 {
+}
+
+.contact-us h2 {
     margin-bottom: 55px;
     color: #2F4858;
     font-family: "Oswald", serif;
     text-align: center;
-  }
-  .contact-us form {
+}
+
+.contact-us form {
     width: 612px;
     margin: auto;
-  }
-  .contact-us form input.half {
+}
+
+.contact-us form input.half {
     width: 50%;
-  }
-  .contact-us form input.half:first-of-type {
+}
+
+.contact-us form input.half:first-of-type {
     margin-right: 20px;
-  }
-  .contact-us form input,
-  .contact-us form textarea {
+}
+
+.contact-us form input,
+.contact-us form textarea {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -338,28 +372,33 @@ Theme Name: Piere
     border-radius: 6px;
     font-size: 18px;
     background-color: rgba(196, 196, 196, 0.4);
-  }
-  .contact-us form textarea {
+}
+
+.contact-us form textarea {
     height: 232px;
     margin-bottom: 15px;
-  }
-  .contact-us form span {
+}
+
+.contact-us form span {
     font-size: 14px;
     line-height: 17px;
-  }
-  .contact-us form label {
+}
+
+.contact-us form label {
     margin: 25px 0 50px;
     cursor: pointer;
-  }
-  .contact-us form label input[type=checkbox] {
+}
+
+.contact-us form label input[type=checkbox] {
     width: auto;
     margin: 0;
-  }
-  .contact-us form .btn-container {
+}
+
+.contact-us form .btn-container {
     text-align: center;
-  }
-  .contact-us form .btn-container .btn {
-    width: 233px;
+}
+
+.contact-us form .btn-container .btn {
     height: 50px;
     font-size: 18px;
     padding: 10px 50px;
@@ -372,35 +411,36 @@ Theme Name: Piere
     width: auto;
     outline: none;
     border: none;
-  }
-  .contact-us form .btn-container .btn:hover {
+}
+
+.contact-us form .btn-container .btn:hover {
     box-shadow: 0 0 10px #FFA800;
-  }
-  
-  .footer_bg {
+}
+
+.footer_bg {
     position: absolute;
     bottom: 0;
     z-index: -1;
-  }
-  .supporters {
+}
+
+.supporters {
     padding: 100px 100px 0;
     position: relative;
-  }
-  .supporters::before {
+}
+
+.supporters::before {
     width: 100%;
-    height: 128px;
     content: "";
     background: url("assets/img/footer-orange-background.svg") center no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0;
     left: 0;
-    z-index: -1;
-    height: 533.32px;
+    height: 533px;
     z-index: -1;
     top: 60px;
-  }
-  .supporters h2 {
+}
+
+.supporters h2 {
     position: relative;
     z-index: 1;
     color: #2F4858;
@@ -408,74 +448,92 @@ Theme Name: Piere
     text-align: center;
     font-family: "Oswald", serif;
     margin-bottom: 55px;
-  }
-  .supporters ul {
+}
+
+.supporters ul {
     position: relative;
     z-index: 1;
     padding: 0;
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
-  }
-  .supporters ul li {
+}
+
+.supporters ul li {
     list-style: none;
     text-align: center;
-  }
-  
-  footer {
+}
+
+footer {
     color: #fff;
     margin-top: 150px;
     background: url("assets/img/footer.png") no-repeat;
     background-size: cover;
-  }
-  footer .footer-top {
+}
+
+footer .footer-top {
     display: flex;
     padding: 150px 62px 0;
-  }
-  footer .footer-top .footer-col {
+}
+
+footer .footer-top .footer-col {
     width: 25%;
     display: inline-block;
-  }
-  footer .footer-top .footer-col h2 {
+}
+footer .footer-top .footer-col a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-top .footer-col h2 {
     display: block;
     margin-bottom: 10px;
-  }
-  footer .footer-top .footer-col div {
+}
+
+footer .footer-top .footer-col div {
     width: 100%;
     display: block;
     margin: 10px 0;
-  }
-  footer .footer-top .footer-col:last-of-type {
+}
+
+footer .footer-top .footer-col:last-of-type {
     text-align: right;
-  }
-  footer .footer-top .footer-col ul {
+}
+
+footer .footer-top .footer-col ul {
     padding: 0;
-  }
-  footer .footer-top .footer-col ul li {
+}
+
+footer .footer-top .footer-col ul li {
     list-style: none;
     margin-bottom: 21px;
-  }
-  footer .footer-top .footer-col ul li a {
+}
+
+footer .footer-top .footer-col ul li a {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
     transition: all 0.3s;
-  }
-  footer .footer-top .footer-col ul li a:hover {
+}
+
+footer .footer-top .footer-col ul li a:hover {
     color: #FFA800;
-  }
-  footer .footer-top .footer-col .social-links {
+}
+
+footer .footer-top .footer-col .social-links {
     margin-top: 52px;
-  }
-  footer .footer-top .footer-col .social-links a {
+}
+
+footer .footer-top .footer-col .social-links a {
     margin-left: 29px;
     text-decoration: none;
-  }
-  footer .footer-top .footer-col .social-links a img {
+}
+
+footer .footer-top .footer-col .social-links a img {
     height: 36px;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     display: flex;
     line-height: 17.07px;
     font-size: 14px;
@@ -483,9 +541,9 @@ Theme Name: Piere
     align-items: center;
     padding: 5px 62px 13px;
     background-color: #2F4858;
-  }
-  
-  .scroll-to-top {
+}
+
+.scroll-to-top {
     height: 40px;
     width: 40px;
     display: none;
@@ -495,8 +553,9 @@ Theme Name: Piere
     z-index: 10;
     border-radius: 50%;
     background-color: #FFA800;
-  }
-  .scroll-to-top::after {
+}
+
+.scroll-to-top::after {
     width: 10px;
     height: 10px;
     content: "";
@@ -506,17 +565,18 @@ Theme Name: Piere
     border: solid #fff;
     border-width: 0 3px 3px 0;
     transform: rotateZ(225deg);
-  }
-  
-  .main_foto {
+}
+
+.main_foto {
     width: 100%;
     max-height: 705px;
     background: url("assets/img/ideja_main.png") no-repeat;
     background-size: 100% 100%;
     margin-top: 200px;
     contain: content;
-  }
-  .main_foto p {
+}
+
+.main_foto p {
     margin: 508px auto;
     padding-bottom: 50px;
     max-width: 50rem;
@@ -527,99 +587,108 @@ Theme Name: Piere
     line-height: 36px;
     text-align: center;
     color: #FFFFFF;
-  }
-  
-  .opinion {
+}
+
+.opinion {
     max-width: 602px;
     font-style: normal;
     align-items: center;
     color: #2F4858;
     margin: 244px auto 150px;
-  }
-  .opinion h2 {
+}
+
+.opinion h2 {
     font-family: Oswald, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-  }
-  .opinion h3 {
+}
+
+.opinion h3 {
     font-family: Montserrat, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-  }
-  .opinion li {
+}
+
+.opinion li {
     font-family: Montserrat, serif;
     font-style: italic;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
-  }
-  
-  #slider {
+}
+
+#slider {
     margin: 0 auto;
     list-style: none;
     position: relative;
     height: 100px;
     padding: 10px;
-  }
-  
-  #slider li {
+}
+
+#slider li {
     position: absolute;
     top: 20px;
     left: 40px;
     max-width: 602px;
     max-height: 119px;
-  }
-  
-  .slider_btn {
+}
+
+.slider_btn {
     margin-top: 30px;
-  }
-  .slider_btn button,
-  .slider_btn button:active,
-  .slider_btn button:focus {
+}
+
+.slider_btn button,
+.slider_btn button:active,
+.slider_btn button:focus {
     outline: none;
     text-decoration: none;
     width: 23px;
     height: 12px;
-  }
-  
-  #next, #prev {
+}
+
+#next, #prev {
     display: block;
     border: none;
     width: 23px;
     height: 12px;
     background-color: #fff;
     cursor: pointer;
-  }
-  
-  #prev {
+}
+
+#prev {
     transform: rotate(180deg);
     float: left;
     margin: 15px;
-  }
-  
-  .dreams {
+}
+
+.dreams {
     display: flex;
     justify-content: space-evenly;
-  }
-  .dreams .left_block .btn {
+}
+
+.dreams .left_block .btn {
     margin-top: 110px;
-  }
-  .dreams .right_block .btn {
+}
+
+.dreams .right_block .btn {
     margin-top: 50px;
-  }
-  .dreams div {
+}
+
+.dreams div {
     text-align: center;
-  }
-  .dreams img {
+}
+
+.dreams img {
     display: block;
     width: 166px;
     margin: 90px auto;
-  }
-  .dreams h2 {
+}
+
+.dreams h2 {
     display: block;
     max-width: 394px;
     font-family: Oswald, serif;
@@ -629,8 +698,9 @@ Theme Name: Piere
     line-height: 44px;
     margin: 60px auto;
     color: #2F4858;
-  }
-  .dreams p {
+}
+
+.dreams p {
     display: block;
     max-width: 394px;
     font-family: Montserrat, serif;
@@ -640,8 +710,9 @@ Theme Name: Piere
     line-height: 22px;
     margin: 30px auto;
     color: #2F4858;
-  }
-  .dreams .btn {
+}
+
+.dreams .btn {
     width: 233px;
     height: 50px;
     font-size: 18px;
@@ -654,78 +725,88 @@ Theme Name: Piere
     transition: all 0.3s;
     border: none;
     margin-top: 50px;
-  }
-  .dreams .btn:hover {
+}
+
+.dreams .btn:hover {
     box-shadow: 0 0 10px #FFA800;
-  }
-  
-  .main_picture {
+}
+
+.main_picture {
     display: block;
     margin-top: 150px;
     width: 100%;
-  }
-  .main_picture img {
+}
+
+.main_picture img {
     width: 100%;
-  }
-  
-  .aim .aim_item {
+}
+
+.aim .aim_item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 120px;
     justify-content: left;
-  }
-  .aim h2 {
+}
+
+.aim h2 {
     font-size: 30px;
     line-height: 44px;
     color: #2F4858;
     margin-bottom: 120px;
     text-align: center;
-  }
-  .aim h3 {
+}
+
+.aim h3 {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
     color: #2F4858;
-  }
-  .aim p {
+}
+
+.aim p {
     max-width: 495px;
     display: inline-block;
     margin-bottom: 50px;
     text-align: left;
-  }
-  .aim img {
+}
+
+.aim img {
     margin: 0 62px 119px auto;
     display: block;
-  }
-  .aim :nth-child(2) {
+}
+
+.aim :nth-child(2) {
     text-align: left;
     margin: 0 auto 120px 62px;
-  }
-  
-  #mountain_descr {
+}
+
+#mountain_descr {
     margin: 0 0 0 auto;
-  }
-  
-  .orange_up {
+}
+
+.orange_up {
     width: 100%;
     height: 533px;
     background: url("assets/img/dreambank_bg.png") no-repeat;
     background-size: 100% 100%;
     background-attachment: revert;
-  }
-  .orange_up .img {
+}
+
+.orange_up .img {
     width: 367px;
     height: 256px;
     margin: 75px auto 0;
     padding: 75px 0 0 0;
-  }
-  .orange_up .img img {
+}
+
+.orange_up .img img {
     width: 100%;
     height: auto;
-  }
-  .orange_up p {
+}
+
+.orange_up p {
     max-width: 818px;
     font-family: Montserrat, serif;
     font-style: normal;
@@ -735,9 +816,9 @@ Theme Name: Piere
     text-align: center;
     margin: 100px auto 0;
     color: #FFFFFF;
-  }
-  
-  .dreams_change h2 {
+}
+
+.dreams_change h2 {
     margin-bottom: 90px;
     font-family: Oswald, serif;
     font-style: normal;
@@ -746,13 +827,15 @@ Theme Name: Piere
     line-height: 44px;
     text-align: center;
     color: #2F4858;
-  }
-  .dreams_change .dreams_change_items {
+}
+
+.dreams_change .dreams_change_items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-  }
-  .dreams_change .dreams_change_items h3 {
+}
+
+.dreams_change .dreams_change_items h3 {
     margin: 30px auto 0;
     width: 287px;
     font-style: normal;
@@ -760,14 +843,15 @@ Theme Name: Piere
     font-size: 24px;
     line-height: 29px;
     text-align: center;
-  }
-  
-  .dream_links {
+}
+
+.dream_links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-  }
-  .dream_links a {
+}
+
+.dream_links a {
     display: block;
     width: 233px;
     height: 50px;
@@ -780,11 +864,13 @@ Theme Name: Piere
     background-color: #FFA800;
     transition: all 0.3s;
     margin: 50px auto;
-  }
-  .dream_links a:hover {
+}
+
+.dream_links a:hover {
     box-shadow: 0 0 10px #FFA800;
-  }
-  .dream_links h2 {
+}
+
+.dream_links h2 {
     font-family: Oswald, serif;
     font-style: normal;
     font-weight: 500;
@@ -792,23 +878,25 @@ Theme Name: Piere
     line-height: 36px;
     text-align: center;
     color: #2F4858;
-  }
-  
-  .supporters_list {
+}
+
+.supporters_list {
     margin: 0 auto;
-  }
-  
-  .list {
+}
+
+.list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     padding: 0 360px;
-  }
-  .list .list_item {
+}
+
+.list .list_item {
     max-width: 288px;
     margin: 15px;
-  }
-  .list .list_item select {
+}
+
+.list .list_item select {
     width: 288px;
     height: 43px;
     background-color: rgba(196, 196, 196, 0.4);
@@ -821,8 +909,9 @@ Theme Name: Piere
     background-image: url("assets/img/arrow.png");
     background-repeat: no-repeat;
     background-position: right 1em top 50%, 0 0;
-  }
-  .list .list_item select option {
+}
+
+.list .list_item select option {
     font-family: Montserrat, serif;
     font-style: normal;
     font-weight: normal;
@@ -832,8 +921,9 @@ Theme Name: Piere
     align-items: center;
     letter-spacing: -0.015em;
     color: #2F4858;
-  }
-  .list p {
+}
+
+.list p {
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
@@ -841,34 +931,36 @@ Theme Name: Piere
     align-items: center;
     letter-spacing: -0.015em;
     color: #FFA800;
-  }
-  
-  .karte {
+}
+
+.karte {
     margin-bottom: -340px;
-  }
-  
-  .gallery_stories {
+}
+
+.gallery_stories {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     max-width: 1030px;
-  }
-  .gallery_stories img {
+}
+
+.gallery_stories img {
     box-sizing: border-box;
     width: 160px;
     height: 160px;
     display: block;
     margin-top: 14px;
     object-fit: cover;
-  }
-  
-  .block {
+}
+
+.block {
     position: relative;
     width: 160px;
     height: 160px;
     background-image: url("../pages/stories_img/block.png");
     margin-top: 14px;
-  }
-  .block span {
+}
+
+.block span {
     position: absolute;
     width: 148px;
     height: 42px;
@@ -880,436 +972,504 @@ Theme Name: Piere
     line-height: 53px;
     text-align: right;
     color: #FFFFFF;
-  }
-  
-  .team h2 {
+}
+
+.team h2 {
     margin-bottom: -85px;
-  }
-  .team .team_img {
+}
+
+.team .team_img {
     display: flex;
     justify-content: space-evenly;
-  }
-  .team .team_img img {
+}
+
+.team .team_img img {
     object-fit: contain;
     height: auto;
     width: 100%;
     max-width: 289px;
-  }
-  
-  .active {
+}
+
+.active {
     display: block;
-  }
-  
-  .full_scr_hidden {
+}
+
+.full_scr_hidden {
     visibility: hidden;
-  }
-  
-  @media (max-width: 1200px) {
+}
+
+@media (max-width: 1200px) {
     header nav {
-      padding: 0 15px;
+        padding: 0 15px;
     }
+
     header nav::after {
-      height: 110px;
+        height: 110px;
     }
+
     header nav img {
-      height: 80px;
+        height: 80px;
     }
+
     header nav .menu-btn {
-      display: block;
+        display: block;
     }
+
     header nav #menu {
-      height: 100%;
-      width: 300px;
-      padding: 30px;
-      display: block;
-      position: fixed;
-      right: -101%;
-      top: 0;
-      z-index: 200;
-      background-color: #fff;
-      transition: all 0.5s;
+        height: 100%;
+        width: 300px;
+        padding: 30px;
+        display: block;
+        position: fixed;
+        right: -101%;
+        top: 0;
+        z-index: 200;
+        background-color: #fff;
+        transition: all 0.5s;
     }
+
     header nav #menu li {
-      margin: 30px 0;
-      width: 100%;
-      height: auto;
+        margin: 30px 0;
+        width: 100%;
+        height: auto;
     }
-  
+
     .about {
-      width: 100%;
-      padding: 0 15px;
-      text-align: center;
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
     }
+
     .about h1 {
-      justify-content: center;
+        justify-content: center;
     }
-  
+
     .gallery-container::before {
-      top: -3px;
+        top: -3px;
     }
+
     .gallery-container::after {
-      bottom: -3px;
+        bottom: -3px;
     }
-  
+
     .dream h2 {
-      font-size: 22px;
+        font-size: 22px;
     }
-  
+
     .contact-us {
-      padding: 0 15px;
+        padding: 0 15px;
     }
+
     .contact-us form {
-      width: 90%;
+        width: 90%;
     }
-  
+
     .supporters {
-      top: 110px;
+        top: 110px;
     }
+
     .supporters .supporters_items {
-      padding: 0;
+        padding: 0;
     }
+
     .supporters .supporters_items::before {
-      height: 400px;
+        height: 400px;
     }
+
     .supporters .supporters_items h2 {
-      padding-top: 30px;
+        padding-top: 30px;
     }
+
     .supporters .supporters_items ul {
-      margin: 70px 0;
-      flex-wrap: wrap;
-      padding-top: 30px;
+        margin: 70px 0;
+        flex-wrap: wrap;
+        padding-top: 30px;
     }
+
     .supporters .supporters_items ul li {
-      width: 50%;
-      padding: 0 15px;
-      margin-bottom: 30px;
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
     }
+
     .supporters .supporters_items ul li img {
-      height: 70px;
-      width: auto;
+        height: 70px;
+        width: auto;
     }
-  
+
     footer .footer-top {
-      text-align: center;
+        text-align: center;
     }
+
     footer .footer-top .footer-col {
-      width: 50%;
-      display: block;
-      margin-bottom: 30px;
+        width: 50%;
+        display: block;
+        margin-bottom: 30px;
     }
+
     footer .footer-top .footer-col:last-of-type {
-      text-align: center;
+        text-align: center;
     }
+
     footer .footer-top .footer-col .contacts {
-      text-align: right;
+        text-align: right;
     }
+
     footer .footer-top .footer-col .contacts h2 {
-      display: none;
+        display: none;
     }
-  
+
+
     .dreams {
-      display: block;
-      justify-content: center;
+        display: block;
+        justify-content: center;
     }
-  
+
     .main_foto {
-      height: auto;
-      background-size: 100% 100%;
-      background-position: 70% 30%;
+        height: auto;
+        background-size: 100% 100%;
+        background-position: 70% 30%;
     }
-  
+
     .aim .aim_item {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
+
     .aim .aim_item img, .aim .aim_item p, .aim .aim_item #mountain_descr {
-      margin: 0 auto;
-      text-align: center;
-      max-width: 400px;
-      margin-bottom: 50px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 400px;
+        margin-bottom: 50px;
     }
+
     .aim :nth-child(2) {
-      margin: 0 auto 120px;
+        margin: 0 auto 120px;
     }
-  
+
     .reverse {
-      display: grid;
+        display: grid;
     }
+
     .reverse p {
-      grid-column: 1;
-      grid-row: 2;
+        grid-column: 1;
+        grid-row: 2;
     }
+
     .reverse img {
-      grid-column: 1;
-      grid-row: 1;
+        grid-column: 1;
+        grid-row: 1;
     }
-  
+
     .dreams_change .dreams_change_items {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
+
     .dreams_change .dreams_change_items img {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
     }
+
     .dreams_change .dreams_change_items h3 {
-      margin-bottom: 60px;
+        margin-bottom: 60px;
     }
-  
+
     .dream_links {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
+
     .orange_up p {
-      margin: 100px 100px;
+        margin: 100px 100px;
     }
+
     .orange_up .img {
-      width: 300px;
+        width: 300px;
     }
-  
+
     .supporters_list .list {
-      padding: 0;
+        padding: 0;
     }
-  
+
     .gallery_stories {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     .gallery_stories div {
-      margin: 0 auto;
+        margin: 0 auto;
     }
+
     .gallery_stories .block {
-      margin: 14px auto 0;
+        margin: 14px auto 0;
     }
-  
+
     .team .team_img {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     .team .team_img img {
-      display: block;
-      margin: 0 auto 25px;
+        display: block;
+        margin: 0 auto 25px;
     }
-  
+
     .block {
-      display: none;
+        display: none;
     }
-  
+
     .show_all {
-      width: 233px;
-      height: 50px;
-      font-size: 18px;
-      padding: 10px 50px;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 50px;
-      cursor: pointer;
-      background-color: #FFA800;
-      transition: all 0.3s;
-      display: block;
-      border: none;
-      margin: 50px auto;
+        width: 233px;
+        height: 50px;
+        font-size: 18px;
+        padding: 10px 50px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+        cursor: pointer;
+        background-color: #FFA800;
+        transition: all 0.3s;
+        display: block;
+        border: none;
+        margin: 50px auto;
     }
+
     .show_all:hover {
-      box-shadow: 0 0 10px #FFA800;
+        box-shadow: 0 0 10px #FFA800;
     }
-  
+
     .rekv_hidden {
-      display: none !important;
+        /*display: none !important;*/
+        visibility: hidden !important;
+        opacity: 0;
+        transition: 4s opacity, 4s visibility;
     }
-  
+
     .active_show {
-      display: block !important;
+        /*display: block !important;*/
+        opacity: 1;
+        visibility: visible !important;
+        transition: 3s opacity, 3s visibility;
     }
-  
+
     .scroll-to-top, .footer_links {
-      display: none;
-      visibility: hidden;
-      height: 0px;
+        display: none;
+        visibility: hidden;
+        height: 0px;
     }
-  
+
     .full_scr_hidden {
-      visibility: visible;
-      font-weight: bold;
-      font-size: larger;
+        visibility: visible;
+        font-weight: bold;
+        font-size: larger;
     }
-  }
-  @media (max-width: 720px) {
+}
+
+@media (max-width: 720px) {
     header nav::after {
-      height: 90px;
+        height: 90px;
     }
+
     header nav img {
-      height: 65px;
+        height: 65px;
     }
+
     header nav .menu-btn {
-      width: 40px;
+        width: 40px;
     }
+
     header .video-container {
-      height: 500px;
+        height: 500px;
     }
-  
+
     .section {
-      margin-top: 100px;
+        margin-top: 100px;
     }
-  
+
     .gallery-container .gallery {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     .gallery-container .gallery div,
-  .gallery-container .gallery div:nth-of-type(3) div {
-      width: 100%;
+    .gallery-container .gallery div:nth-of-type(3) div {
+        width: 100%;
     }
-  
+
     .dream {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     .dream div {
-      display: inline-block;
-      margin-bottom: 50px;
+        display: inline-block;
+        margin-bottom: 50px;
     }
-  
+
     .contact-us form {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .main_foto {
-      background-size: cover;
+        background-size: cover;
     }
+
     .main_foto p {
-      margin: 400px 30px;
+        margin: 400px 30px;
     }
-  
+
     .opinion {
-      padding: 10px;
+        padding: 10px;
     }
+
     .opinion .slider_btn {
-      margin-top: 80px;
+        margin-top: 80px;
     }
-  
+
     .supporters {
-      top: 200px;
-      padding-right: 10px;
-      padding-left: 10px;
+        top: 200px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
+
     .supporters .supporters_items ul li img {
-      max-width: 100%;
-      height: auto;
+        max-width: 100%;
+        height: auto;
     }
-  
+
     footer .footer-top {
-      flex-direction: column;
-      padding: 30px;
-      width: 70%;
+        flex-direction: column;
+        padding: 30px;
+        width: 70%;
     }
+
     footer .footer-top .footer-col {
-      width: 100%;
-      text-align: left;
+        width: 100%;
+        text-align: left;
     }
+
     footer .footer-top .footer-col h2 {
-      display: block;
+        display: block;
     }
+
     footer .footer-top .footer-col:last-of-type {
-      text-align: left;
+        text-align: left;
     }
+
     footer .footer-top .footer-col .logo_footer {
-      width: 150px;
-      margin-top: 85px;
+        width: 150px;
+        margin-top: 85px;
     }
+
     footer .footer-top .footer-col .contacts {
-      text-align: left;
+        text-align: left;
     }
+
     footer .footer-bottom {
-      padding: 5px;
-      text-align: left;
-      flex-direction: column;
-      font-size: 10px;
-      margin: 0 40px 0 0;
+        padding: 5px;
+        text-align: left;
+        flex-direction: column;
+        font-size: 10px;
+        margin: 0 40px 0 0;
     }
+
     footer .footer-bottom :first-child {
-      margin-right: 10px;
+        margin-right: 10px;
     }
+
     footer .footer-bottom .copyrights {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 15px;
-      justify-content: left;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        justify-content: left;
     }
-  
+
     .orange_up p {
-      margin: 80px 20px;
+        margin: 80px 20px;
     }
-  
+
     .supporters_list .list {
-      padding: 0;
-      grid-template-columns: 1fr;
+        padding: 0;
+        grid-template-columns: 1fr;
     }
-  
+
     .gallery_stories {
-      grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
+
     .gallery_stories img, .gallery_stories .block {
-      padding: 5px;
-      margin: 50px auto -20px;
+        padding: 5px;
+        margin: 50px auto -20px;
     }
-  
+
     .rekv_hidden {
-      display: none !important;
+        /*display: none !important;*/
+        visibility: hidden !important;
+        opacity: 0;
+        transition: .3s opacity, .3s visibility;
+        height: 0;
     }
-  
+
     .active_show {
-      display: block !important;
-      opacity: 1;
-      transition: all 1s;
+        /*display: block !important;*/
+        opacity: 1;
+        visibility: visible !important;
+        transition: 3s opacity, 3s visibility;
+        height: auto;
+
     }
-  
+
     .scroll-to-top, .footer_links {
-      display: none;
-      visibility: hidden;
-      height: 0px;
+        display: none;
+        visibility: hidden;
+        height: 0px;
     }
-  
+
     .team h2 {
-      font-size: 30px;
-      margin-bottom: 0;
+        font-size: 30px;
+        margin-bottom: 0;
     }
-  
+
     .block {
-      display: none;
+        display: none;
     }
-  
+
     .show_all {
-      width: 233px;
-      height: 50px;
-      font-size: 18px;
-      padding: 10px 50px;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 50px;
-      cursor: pointer;
-      background-color: #FFA800;
-      transition: all 0.3s;
-      display: block;
-      border: none;
-      margin: 50px auto;
+        width: 233px;
+        height: 50px;
+        font-size: 18px;
+        padding: 10px 50px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+        cursor: pointer;
+        background-color: #FFA800;
+        transition: all 0.3s;
+        display: block;
+        border: none;
+        margin: 50px auto;
     }
+
     .show_all:hover {
-      box-shadow: 0 0 10px #FFA800;
+        box-shadow: 0 0 10px #FFA800;
     }
-  
+
     .gallery-container .gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
+
     .gallery-container .gallery .first_item {
-      order: -2;
-      margin-top: 15px;
+        order: -2;
+        margin-top: 15px;
     }
+
     .gallery-container .gallery .last_item {
-      order: 2;
+        order: 2;
     }
+
     .gallery-container .gallery .second_item {
-      order: -1;
+        order: -1;
     }
-  
+
     .full_scr_hidden {
-      visibility: visible;
+        visibility: visible;
     }
-  }
-  
-  /*# sourceMappingURL=style.css.map */
-  
+}
+
+/*# sourceMappingURL=style.css.map */
+
 /*# sourceMappingURL=style.css.map */

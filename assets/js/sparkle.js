@@ -1,5 +1,5 @@
 
-    jQuery(document).ready(function () {
+jQuery(document).ready(function () {
 
         jQuery(".menu-btn").click(function () {
             jQuery(".menu-overlay").fadeIn(300);
@@ -65,11 +65,11 @@ block();
 
             var i = newIndex;
 
-            if (newIndex == 'prev') {
+            if (newIndex === 'prev') {
                 i = (current > 0) ? (current - 1) : (listLen - 1);
             }
 
-            if (newIndex == 'next') {
+            if (newIndex === 'next') {
                 i = (current < listLen - 1) ? (current + 1) : 0;
             }
 
@@ -103,7 +103,7 @@ block();
             moveTo('next');
         });
         //initialize slider on load
-        moveTo('next');
+        moveTo('next', 'prev');
 
 
 
@@ -113,6 +113,7 @@ block();
 // $('.show_rekv').click(function (){
 //     $('#menu_footer').css('display', ' ');
 // })
+
 jQuery('#show_rekv').on('click', function (e) {
     e.preventDefault();
     jQuery('.rekv_hidden').toggleClass('active_show');

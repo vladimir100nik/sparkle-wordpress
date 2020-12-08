@@ -22,22 +22,23 @@
                 <div class="footer-col rekv_hidden">
 
                     <div class="rekv_hidden">
-                        <h2>Biedrība SparkleHeart</h2>
-
-                        <div>Reģistrācijas nr. 40008293119</div>
-                        <div>Banka: SWEDBANK A/S</div>
-                        <div>LV52HABA0551047652465</div>
+                        <h2><? the_field('req_title', 2) ?></h2>
+                        <div><? the_field('reg_number', 2) ?></div>
+                        <div><? the_field('bank_name', 2) ?></div>
+                        <div><? the_field('account_number', 2) ?></div>
                     </div>
 
                 </div>
 
                 <div class="footer-col">
                     <div class="contacts">
-                        <h2>Juris Gogulis</h2><br>
-                        <div>juris.gogulis@sparkleheart.org</div>
-                        <div>+37126890034</div>
-                        <div>Biķernieku iela 24a - 5, LV-1006</div>
+                        <h2><? the_field('contact_name', 2);?></h2><br>
+                        <div><a href="mailto:juris.gogulis@sparkleheart.org"><? the_field('email', 2);?></a></div>
+                        <div><a href="tel:+37126890034"><? the_field('phone_number', 2);?></a></div>
+                        <div><? the_field('address', 2);?></div>
+
                         <a class="full_scr_hidden" id="show_rekv">Skatīt rekvizītus</a>
+
                     </div>
 
                     <div class="social-links">
@@ -65,7 +66,7 @@
 
     <div class="scroll-to-top"></div>
 
-
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <?
     wp_footer();

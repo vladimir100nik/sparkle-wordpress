@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><? bloginfo('name'); echo " | "; bloginfo('description')?></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="shortcut icon" href="<? echo bloginfo('template_url');?>/assets/img/favicon.ico" type="image/x-icon">
 
     <?
@@ -38,7 +39,7 @@
         </nav>
 
         <div class="section video-container">
-            <img class='video-thumb' src="<? echo bloginfo('template_url');?>/assets/img/video-thumb.svg" alt="Video thumbnail">
-            <img class='play-btn' src="<? echo bloginfo('template_url');?>/assets/img/play-button.svg" alt="Play video">
+            <img class='video-thumb' src="<? the_field('present_video_image'); ?>" alt="Video thumbnail">
+            <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=0Z5_mgxoXeM"><img class='play-btn' src="<? echo bloginfo('template_url');?>/assets/img/play-button.svg" alt="Play video"></a>
         </div>
     </header>

@@ -480,6 +480,7 @@ footer .footer-top .footer-col {
     width: 25%;
     display: inline-block;
 }
+
 footer .footer-top .footer-col a {
     text-decoration: none;
     color: #fff;
@@ -590,11 +591,13 @@ footer .footer-top .footer-col .social-links a img {
 }
 
 .opinion {
+    position: relative;
     max-width: 602px;
     font-style: normal;
     align-items: center;
     color: #2F4858;
-    margin: 244px auto 150px;
+    margin: 150px auto 350px;
+    padding-bottom: 50px;
 }
 
 .opinion h2 {
@@ -619,25 +622,32 @@ footer .footer-top .footer-col .social-links a img {
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
-}
-
-#slider {
-    margin: 0 auto;
     list-style: none;
-    position: relative;
-    height: 100px;
-    padding: 10px;
 }
 
-#slider li {
+/*#slider {*/
+/*    margin: 0 auto;*/
+/*    list-style: none;*/
+/*    position: relative;*/
+/*    height: 100px;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*#slider li {*/
+/*    position: absolute;*/
+/*    top: 20px;*/
+/*    left: 40px;*/
+/*    max-width: 602px;*/
+/*    max-height: 119px;*/
+/*}*/
+
+.slide {
     position: absolute;
-    top: 20px;
-    left: 40px;
-    max-width: 602px;
-    max-height: 119px;
+    opacity: 0;
 }
-
 .slider_btn {
+    position: absolute;
+    top: 250px;
     margin-top: 30px;
 }
 
@@ -664,6 +674,12 @@ footer .footer-top .footer-col .social-links a img {
     float: left;
     margin: 15px;
 }
+
+.visible {
+    opacity: 1;
+    transition: all 1s ease-in 0.1s;
+}
+
 
 .dreams {
     display: flex;

@@ -27,4 +27,14 @@ function filter_nav_menu_link_attributes($atts, $item, $args) {
     return $atts;
 }
 
+
+function my_acf_google_map_api( $api ){
+
+	$api['key'] = 'AIzaSyDszYnXADo49beZSxaUrpg1eMsHluuo3do'; // Ваш ключ Google API
+
+	return $api;
+
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 ?>

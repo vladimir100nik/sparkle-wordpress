@@ -27,22 +27,31 @@ get_header();
 </div>
 
 <div class="section opinion">
-    <h2>Ken Ludden </h2>
-    <h3>Director, Margot Fonteyn Academy of Ballet</h3>
+
     <ul id="slider">
-        <li>1For it is Juris work that is the
-            light the human race needs so badly these days. His vision is inspired and talent is beyond measure.
+        <li class="slide visible">
+        <h2>Ken Ludden </h2>
+            <h3>Director, Margot Fonteyn Academy of Ballet</h3>
+           <p>
+            For it is Juris work that is the
+                          light the human race needs so badly these days. His vision is inspired and talent is beyond measure.
+           </p>
         </li>
-        <li>2For it is Juris work that is the
-            light the human race needs so badly these days. His vision is inspired and talent is beyond measure.
-        </li>
-        <li>3For it is Juris work that is the
-            light the human race needs so badly these days. His vision is inspired and talent is beyond measure.
-        </li>
+        <li class="slide ">
+                <h2>Voldemārs Brēdiķis</h2>
+                    <h3>Managing partner at commercialization Reactor Fund, enterpreneur, angel investor</h3>
+                   <p>
+                   Juris has an inspiring drive and healthy ambition on top of human oriented person with amazing combination of creativity and abitlity to focus.</p>
+                </li>
+        <li class="slide ">
+                <h2>Regīna Kaupuža </h2>
+                    <h3>LNOB baleta pedagoģe, JVLMA horeogrāfijas katedras docente</h3>
+                   <p>Juris Gogulis ir ļoti radoša un uzņēmīga personība ar nezūdošo optimismu un gaišu prātu. Jaunu un galvenais drosmīgu ideju realizētājs!</p>
+                </li>
     </ul>
     <div class="slider_btn">
-        <button id="prev"><img src="../img/slider_vector_right.svg" alt="vector"></button>
-        <button id="next"><img src="../img/slider_vector_right.svg" alt="vector"></button>
+        <button id="prev"><img src="<? the_field('arrow'); ?>" alt="prev"></button>
+        <button id="next"><img src="<? the_field('arrow'); ?>" alt="next"></button>
     </div>
 
 </div>

@@ -17,14 +17,14 @@ get_header();
 
 <div class="section dreams">
     <div class="left_block">
-        <img src="../img/rabbit.png" alt="rabbit">
+        <img src="<? the_field('rabbit_img');?>" alt="rabbit">
         <h2>PERSONĪGAIS SAPNIS</h2>
         <p>Bērnības nepiepildītie sapņi... No sev piederoša svaigi spiestas sulas bāra uz Tērbatas ielas līdz iespējai
             satikties ar Džekiju Čanu.</p>
         <button class="btn">Piesaki sapni</button>
     </div>
     <div class="right_block">
-        <img src="../img/ballon.svg" alt="ballon">
+        <img src="<? the_field('ballon_img');?>" alt="ballon">
         <h2>PROFESIONĀLAIS SAPNIS</h2>
         <p>Sapnis vai ideja, kura ir balstīta uz reģiona, pasaules vai cilvēku attīstību 4 virzienos - kultūra,
             izglītība, zinātne, ģimene jeb sociālā vide. Tā ir iespēja attīstīt ideju, kas uzlabotu ikdienas dzīves

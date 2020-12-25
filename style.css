@@ -1014,6 +1014,10 @@ footer .footer-top .footer-col .social-links a img {
     visibility: hidden;
 }
 
+.show_all{
+    visibility:hidden;
+}
+
 @media (max-width: 1200px) {
     header nav {
         padding: 0 15px;
@@ -1230,6 +1234,7 @@ footer .footer-top .footer-col .social-links a img {
     }
 
     .show_all {
+        visibility:visible;
         width: 233px;
         height: 50px;
         font-size: 18px;

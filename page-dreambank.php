@@ -11,8 +11,7 @@ get_header();
     <h2 class="page_title">SAPŅU BANKA</h2>
 
     <div class="main_picture">
-        <img src="../img/dream_bank_video.jpg" alt="Video thumbnail">
-
+        <img src="<? the_field('dream_main_img'); ?>" alt="">
     </div>
 </div>
 
@@ -22,7 +21,7 @@ get_header();
     <div class="aim">
         <h2>MĒRĶIS</h2>
         <div class="aim_item">
-            <img src="../img/sun.png" alt="Sun">
+            <img src="<? the_field('sun_img'); ?>" alt="Sun">
 
             <p>Palīdzēt Latvijas un citu valstu sabiedrības locekļiem gūt panākumus personiskajā dzīvē un piepildīt
                 dzīves sapņus, tādējādi, veicinot visas sabiedrības labklājību un kopējo laimes indeksu</p>
@@ -31,10 +30,10 @@ get_header();
             <p id="mountain_descr">Palīdzēt Latvijas un citu valstu sabiedrības locekļiem īstenot sapņus un idejas, kuras ir balstītas uz
                 pasaules un cilvēces ilgtspējīgu attīstību, tai skaitā izglītošanos un tālākizglītību</p>
 
-            <img src="../img/mountains.png" alt="Mountains">
+            <img src="<? the_field('moutains_img'); ?>" alt="Mountains">
         </div>
         <div class="aim_item">
-            <img src="../img/glasses.png" alt="Glasses">
+            <img src="<? the_field('glasses_img'); ?>" alt="Glasses">
 
             <p>Piesaistīt juridisko un fizisko personu intelektuālos un finanšu resursus sapņu realizācijai</p>
         </div>
@@ -45,7 +44,7 @@ get_header();
 
 <div class="section">
     <div class="orange_up">
-       <div class="img"><img src="../img/dream_bank_up.png" alt="orange"></div>
+       <div class="img"><img src="<? the_field('planet_img'); ?>" alt="orange"></div>
         <p>Tavai zināšanai, sapņus mēs krājam visu gadu, lai maijā, kad visa pasaule zied, izvēlētos pašus
             iedvesmojošākos. </p>
     </div>
@@ -56,13 +55,13 @@ get_header();
         <h2>SAPŅUS ATLASĪS</h2>
         <div class="dreams_change_items">
             <div class="change_item">
-                <img src="../img/voice.png" alt="Speaker">
+                <img src="<? the_field('voice_img'); ?>" alt="Speaker">
                 <h3>
                     Publiskais cilvēku balsojums mājas lapā
                 </h3>
             </div>
             <div class="change_item">
-                <img src="../img/people.png" alt="People">
+                <img src="<? the_field('people_img'); ?>" alt="people">
                 <h3>
                     Īpaši izveidota komisija, kur tiek pieaicināti arī SP sadarbības partneri
                 </h3>
@@ -74,7 +73,7 @@ get_header();
 
 <div class="section">
     <div class="orange_up">
-        <div class="img"> <img src="../img/dream_bank_down.png" alt="orange"></div>
+        <div class="img"> <img src="<? the_field('rainbow_img'); ?>" alt="orange"></div>
 
         <p>Galvenais kritērijs, lai sapni izvēlētos, ir, vai to realizējot, mēs padarīsim pasauli labāku. Un pasauli
             labāku var padarīt gan lielas, gan mazas lietas</p>

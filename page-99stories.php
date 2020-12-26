@@ -31,82 +31,13 @@ $posts = get_posts( array(
 
         ?>
             <div>
-                    <a data-fancybox="gallery" href="https://www.youtube.com/embed/1PalAURGxtM"><img src="<? the_field('video_img');?>"></a>
+                    <a data-fancybox="gallery" href="<? the_field('video_link');?>"><img src="<? the_field('video_img');?>"></a>
             </div>
     <?
     }
     wp_reset_postdata(); // сброс
     ?>
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/1.png"></a>
-    </div>
 
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/2.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/3.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/4.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/5.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/6.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/7.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/8.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/9.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/10.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/11.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/12.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/13.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/14.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/15.png"></a>
-    </div>
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/16.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/17.png"></a>
-    </div>
-
-    <div>
-        <a data-fancybox="gallery" href=#><img src="stories_img/18.png"></a>
-    </div>
 </div>
 <button id="show_all" class="btn show_all">Skatīt vairāk</button>
 

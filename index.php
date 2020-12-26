@@ -60,27 +60,28 @@ get_header();
         <h2>SAZINĀTIES AR MUMS</h2>
 
         <form action="" method="">
-            <div class="d-flex justify-content-between align-items-center">
-                <input class='half' type="text" name="name" placeholder="Vārds, Uzvārds*" required>
-                <input class='half' type="email" name="email" placeholder="E-pasts*" required>
-            </div>
+       <div class="d-flex justify-content-between align-items-center">
+                   <input class='half' type="text" name="name" placeholder="Vārds, Uzvārds*" required>
+                   <input class='half' type="email" name="email" placeholder="E-pasts*" required>
+               </div>
 
-            <input type="tel" name="phone" placeholder="Telefons*" required>
-            <textarea name="message" placeholder="Jautājums, vai komentārs*" required></textarea>
+               <input type="tel" name="phone" placeholder="Telefons*" required>
+               <textarea name="message" placeholder="Jautājums, vai komentārs*" required></textarea>
 
-            <div>* obligāti aizpildāmie lauki</div>
+               <div>* obligāti aizpildāmie lauki</div>
 
-            <label class="checbox-container d-flex align-items-center">
-                <div>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr
-                    tas būs nepieciešams.
-                </div>
-                <input type="checkbox" name="terms" id="terms">
-                <span class="checkmark"></span>
-            </label>
+               <label class="checbox-container d-flex align-items-center">
+                   <div>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr
+                       tas būs nepieciešams.
+                   </div>
+                   <input type="checkbox" name="terms" id="terms">
+                   <span class="checkmark"></span>
+               </label>
 
-            <div class="btn-container">
-                <button class='btn' type="submit">Sūtīt</button>
-            </div>
+               <div class="btn-container">
+                   <button class='btn' type="submit">Sūtīt</button>
+               </div>
+
         </form>
     </div>
 

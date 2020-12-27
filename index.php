@@ -59,27 +59,35 @@ get_header();
     <div class="section contact-us">
         <h2>SAZINĀTIES AR MUMS</h2>
 
-        <form action="" method="">
-       <div class="d-flex justify-content-between align-items-center">
-                   <input class='half' type="text" name="name" placeholder="Vārds, Uzvārds*" required>
-                   <input class='half' type="email" name="email" placeholder="E-pasts*" required>
+        <form action="#" method="post" class="form__body" id="form">
+
+        // Hidden Required Fields
+        		<input type="hidden" name="project_name" value="Site Name">
+        		<input type="hidden" name="admin_email" value="admin@mail.com">
+        		<input type="hidden" name="form_subject" value="Form Subject">
+        // END Hidden Required Fields
+
+
+                <div class="d-flex justify-content-between align-items-center">
+                   <input class='form__input' type="text" name="Name" placeholder="Vārds, Uzvārds*" required>
+                   <input class='form__input' type="email" name="E-mail" placeholder="E-pasts*" required>
                </div>
 
-               <input type="tel" name="phone" placeholder="Telefons*" required>
-               <textarea name="message" placeholder="Jautājums, vai komentārs*" required></textarea>
+               <input class='form__input' type="tel" name="Phone" placeholder="Telefons*" required>
+               <textarea class='form__input' name="Message" placeholder="Jautājums, vai komentārs*" required></textarea>
 
                <div>* obligāti aizpildāmie lauki</div>
 
-               <label class="checbox-container d-flex align-items-center">
-                   <div>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr
-                       tas būs nepieciešams.
+               <label for="formAgreement" class="checbox-container d-flex align-items-center">
+                   <div>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamērtas būs nepieciešams.
                    </div>
-                   <input type="checkbox" name="terms" id="terms">
+                </label>
+                   <input class="checkbox__label _req" type="checkbox" name="agreement" id="formAgreement">
                    <span class="checkmark"></span>
-               </label>
+
 
                <div class="btn-container">
-                   <button class='btn' type="submit">Sūtīt</button>
+                   <button class='btn form__button' type="submit">Sūtīt</button>
                </div>
 
         </form>

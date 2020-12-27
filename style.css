@@ -417,6 +417,11 @@ header nav .menu-overlay {
     box-shadow: 0 0 10px #FFA800;
 }
 
+.form__input._error{
+    box-shadow: 0 0 15px red;
+}
+
+
 .footer_bg {
     position: absolute;
     bottom: 0;
